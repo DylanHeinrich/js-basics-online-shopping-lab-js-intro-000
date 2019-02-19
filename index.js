@@ -41,13 +41,21 @@ function total() {
   // write your code here
   var totalAmount = 0;
   for(var i = 0; i < cart.length; i++){
-    totalAmount += cart[i].itemPrice
+    totalAmount += cart[i].itemPrice;
   }
-  return totalAmount
+  return totalAmount;
 }
 
 function removeFromCart(item) {
   // write your code here
+  var i = 0;
+  var test = cart[i].itemName;
+  while(test ==! item || i > cart.length){
+    i++
+    test = cart[i].itemName;
+  }
+  cart.slice(i - 1, i)
+
 }
 
 function placeOrder(cardNumber) {
