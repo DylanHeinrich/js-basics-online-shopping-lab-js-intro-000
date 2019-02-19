@@ -51,10 +51,10 @@ function removeFromCart(item) {
   var i = 0;
   var test = `${cart[i].itemName}`;
   console.log(test)
-  //while(test ==! item || i < cart.length){
-  //  i++
-    //test = `${cart[i].itemName}`;
-  //}
+  while(test ==! item || i < cart.length){
+    i++
+    test = `${cart[i].itemName}`;
+  }
   //cart.slice(i)
 
 }
