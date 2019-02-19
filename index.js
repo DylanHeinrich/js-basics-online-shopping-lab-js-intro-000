@@ -33,12 +33,17 @@ function viewCart() {
     for(var i = 0; i < cart.length-1; i++){
       items += `${cart[i].itemName} at $${cart[i].itemPrice}, `;
     }
-    return `${items}and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+    return `${items}and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`;
   }
 }
 
 function total() {
   // write your code here
+  var totalAmount;
+  for(var i = 0; i < cart.length; i++){
+    totalAmount += cart[i].itemPrice
+  }
+  return totalAmount
 }
 
 function removeFromCart(item) {
