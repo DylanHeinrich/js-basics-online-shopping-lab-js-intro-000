@@ -52,7 +52,7 @@ function removeFromCart(item) {
   var test = `${cart[i].itemName}`;
   while(test ==! item || i < cart.length){
     i++
-    test = cart[i].itemName;
+    test = `${cart[i].itemName}`;
   }
   cart.slice(i)
 
