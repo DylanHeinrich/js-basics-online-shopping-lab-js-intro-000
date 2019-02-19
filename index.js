@@ -55,7 +55,7 @@ function removeFromCart(item) {
     i++
     test = `${cart[i].itemName}`;
   }
-  cart.slice(i)
+  cart.slice(i -1, i)
 
 }
 
