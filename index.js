@@ -53,6 +53,7 @@ function removeFromCart(item) {
       cart = cart.splice(i, 1)
     }
   }
+  return cart
 
 }
 
