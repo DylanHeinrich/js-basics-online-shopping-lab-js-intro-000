@@ -50,7 +50,7 @@ function removeFromCart(item) {
   // write your code here
   var i = 0;
   var test = cart[i].itemName;
-  while(test ==! item || i > cart.length){
+  while(test ==! item || i < cart.length){
     i++
     test = cart[i].itemName;
   }
